@@ -1,0 +1,28 @@
+{% extends "entidades/index.html" %}
+
+{% block titulo %}
+<h1 class="mb-5">Compra</h1>
+{% endblock titulo %}
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Cliente</th>
+            <th>Curso</th>
+            <th>Fecha Compra</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in compra %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.cliente }}</td>
+            <td>{{ c.curso }}</td>
+            <td>{{ c.fecha_compra }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

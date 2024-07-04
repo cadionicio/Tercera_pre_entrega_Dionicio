@@ -1,0 +1,30 @@
+{% extends "entidades/index.html" %}
+
+{% block titulo %}
+<h1 class="mb-5">Cliente</h1>
+{% endblock titulo %}
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Usuario</th>
+            <th>Password</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in cliente %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.usuario }}</td>
+            <td>{{ c.password }}</td>
+            <td>{{ c.email }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}
