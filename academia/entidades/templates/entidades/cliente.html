@@ -5,6 +5,20 @@
 {% endblock titulo %}
 
 {% block contenido %}
+
+<table>
+    <tr>
+        <td width="200"><h2>Clientes</h2></td>
+        <td>
+            <a
+            href="{% url 'clienteForm' %}"
+            class="btn btn-primary btn-sm"
+            ><i class="fa fa-plus fa-lg" title="Crear"> </i>
+            </a>
+        </td>        
+    </tr>
+</table>
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -13,6 +27,7 @@
             <th>Usuario</th>
             <th>Password</th>
             <th>Email</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -23,6 +38,20 @@
             <td>{{ c.usuario }}</td>
             <td>{{ c.password }}</td>
             <td>{{ c.email }}</td>
+            <td>
+                <a
+                  href="{% url 'clienteUpdate' c.id %}"
+                  class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-edit fa-sm" title="Edit Record"></i>
+                </a>
+                <a
+                  href="{% url 'clienteDelete' c.id %}"
+                  class="btn btn-danger"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-trash fa-sm" title="Delete Record"></i>
+                </a>
+            </td>
         </tr>
         {% endfor %}
     </tbody>
