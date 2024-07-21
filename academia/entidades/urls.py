@@ -38,5 +38,5 @@ urlpatterns = [
     #___ Edicion de Perfil / Avatar
     path('perfil/', editProfile, name="perfil"),
     path('<int:pk>/password/', CambiarClave.as_view(),name="cambiarClave"),
-    path('agregar_avatar', agregarAvatar, name="agregar_avatar"),
+    path('agregar_avatar/', agregarAvatar, name="agregar_avatar"),
 ]

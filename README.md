@@ -1,4 +1,6 @@
-# Tercera_pre_entrega_Dionicio
+# Trabajo_Final_Dionicio_Cesar_Comisión_57810
+
+Para más información sobre nuestra plataforma, puedes ver nuestro video de presentación en YouTube: [Academia Virtual - Presentación](https://youtu.be/aAXTlHucEw0)
 
 # 🌟 Bienvenidos a Academia Virtual 🌟
 
@@ -14,29 +16,3 @@ Proporcionar cursos virtuales que sean accesibles desde cualquier lugar y a cual
 ### 🏆 Garantizar la satisfacción y el éxito de nuestros estudiantes
 Ofrecer apoyo continuo y recursos adicionales para asegurar que cada estudiante pueda alcanzar sus metas académicas y profesionales con éxito.
 
-## 🌐 Rutas del Sitio WEB
-
-- **Ruta Home:** [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-  
-- **Ruta Cliente:** [http://127.0.0.1:8000/cliente/](http://127.0.0.1:8000/cliente/)
-  - Presenta la tabla Cliente
-
-- **Ruta Curso:** [http://127.0.0.1:8000/curso/](http://127.0.0.1:8000/curso/)
-  - Presenta la tabla Curso
-
-- **Ruta Comprar:** [http://127.0.0.1:8000/comprar/](http://127.0.0.1:8000/compra/)
-  - Presenta la tabla Comprar
-
-- **Ruta Admin:** [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
-  - **Usuario:** cadionicio
-  - **Contraseña:** cadionicio2011
-  - También se han implementado filtros para una búsqueda optimizada
-
-- **Ruta Curso Formulario:** [http://127.0.0.1:8000/cursoForm/](http://127.0.0.1:8000/cursoForm/)
-
-- **Ruta Cliente Formulario:** [http://127.0.0.1:8000/clienteForm/](http://127.0.0.1:8000/clienteForm/)
-
-- **Ruta Compra Formulario:** [http://127.0.0.1:8000/compraForm/](http://127.0.0.1:8000/compraForm/)
-
-- **Ruta Buscar Curso:** [http://127.0.0.1:8000/buscarCurso/](http://127.0.0.1:8000/buscarCurso/)
-  - Permite filtrar cursos mediante coincidencia de caracteres 🔍
